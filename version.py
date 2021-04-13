@@ -1,20 +1,17 @@
 # NEON AI (TM) SOFTWARE, Software Development Kit & Application Development System
+# All trademark and other rights reserved by their respective owners
+# Copyright 2008-2021 Neongecko.com Inc.
 #
-# Copyright 2008-2021 Neongecko.com Inc. | All Rights Reserved
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
 #
-# Notice of License - Duplicating this Notice of License near the start of any file containing
-# a derivative of this software is a condition of license for this software.
-# Friendly Licensing:
-# No charge, open source royalty free use of the Neon AI software source and object is offered for
-# educational users, noncommercial enthusiasts, Public Benefit Corporations (and LLCs) and
-# Social Purpose Corporations (and LLCs). Developers can contact developers@neon.ai
-# For commercial licensing, distribution of derivative works or redistribution please contact licenses@neon.ai
-# Distributed on an "AS IS” basis without warranties or conditions of any kind, either express or implied.
-# Trademarks of Neongecko: Neon AI(TM), Neon Assist (TM), Neon Communicator(TM), Klat(TM)
-# Authors: Guy Daniels, Daniel McKnight, Regina Bloomstine, Elon Gasper, Richard Leeds
+#    http://www.apache.org/licenses/LICENSE-2.0
 #
-# Specialized conversational reconveyance options from Conversation Processing Intelligence Corp.
-# US Patents 2008-2021: US7424516, US20140161250, US20140177813, US8638908, US8068604, US8553852, US10530923, US10530924
-# China Patent: CN102017585  -  Europe Patent: EU2156652  -  Patents Pending
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
 __version__ = "0.0.1"

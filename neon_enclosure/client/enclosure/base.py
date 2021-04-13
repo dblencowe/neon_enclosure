@@ -21,7 +21,7 @@ from collections import namedtuple
 from threading import Lock
 from mycroft_bus_client import MessageBusClient, Message
 from ovos_utils import create_daemon
-from neon_utils import LOG
+from ovos_utils.log import LOG
 from neon_utils.configuration_utils import get_mycroft_compatible_config
 # from mycroft.configuration import Configuration
 from mycroft.util import start_message_bus_client  # TODO: Reference in mycroft-bus-client? DM

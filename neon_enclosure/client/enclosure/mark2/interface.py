@@ -21,7 +21,7 @@ from neon_enclosure.enclosure.hardware_enclosure import HardwareEnclosure
 from neon_enclosure.util.hardware_capabilities import EnclosureCapabilities
 
 from mycroft_bus_client import Message
-from neon_utils.logger import LOG
+from ovos_utils.log import LOG
 
 from mycroft.util import connected
 

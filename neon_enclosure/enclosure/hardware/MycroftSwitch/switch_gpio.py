@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import RPi.GPIO as GPIO
-from neon_utils.logger import LOG
+from ovos_utils.log import LOG
 
 
 class Switch:
