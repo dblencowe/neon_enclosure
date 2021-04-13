@@ -24,7 +24,6 @@ from ovos_utils import create_daemon
 from ovos_utils.log import LOG
 from neon_utils.configuration_utils import get_mycroft_compatible_config
 # from mycroft.configuration import Configuration
-from mycroft.util import start_message_bus_client  # TODO: Reference in mycroft-bus-client? DM
 
 
 Namespace = namedtuple('Namespace', ['name', 'pages'])
@@ -63,6 +62,14 @@ class Enclosure:
         config = get_mycroft_compatible_config()
         self.lang = config['lang']
         self.config = config.get("enclosure")
+        LOG.info(config)
+        config["gui_websocket"] = config.get("gui_websocket", {"host": "0.0.0.0",
+                                                               "base_port": 18181,
+                                                               "route": "/gui",
+                                                               "ssl": False})
+        config['gui_websocket']["base_port"] = config["gui_websocket"].get("base_port",
+                                                                           config["gui_websocket"].get("port", 18181))
+
         self.global_config = config
 
         # Create Message Bus Client
@@ -107,7 +114,7 @@ class Enclosure:
         """Start the Enclosure after it has been constructed."""
         # Allow exceptions to be raised to the Enclosure Service
         # if they may cause the Service to fail.
-        start_message_bus_client("ENCLOSURE", self.bus)
+        self.bus.run_in_thread()
 
     def stop(self):
         """Perform any enclosure shutdown processes."""

@@ -37,9 +37,9 @@ from threading import Thread, Timer
 
 import os
 
-from mycroft.messagebus.client import MessageBusClient
-from mycroft.util import get_ipc_directory
-from mycroft.util.log import LOG
+from mycroft_bus_client import MessageBusClient
+from ovos_utils.signal import get_ipc_directory
+from ovos_utils.log import LOG
 
 
 def _write_data(dictionary):
