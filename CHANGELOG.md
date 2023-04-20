@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.2a1](https://github.com/NeonGeckoCom/neon_enclosure/tree/1.4.2a1) (2023-04-20)
+
+[Full Changelog](https://github.com/NeonGeckoCom/neon_enclosure/compare/1.3.2a3...1.4.2a1)
+
+**Merged pull requests:**
+
+- Update automation to run license and unit tests on PR to 'master' branch [\#64](https://github.com/NeonGeckoCom/neon_enclosure/pull/64) ([NeonDaniel](https://github.com/NeonDaniel))
+
 ## [1.3.2a3](https://github.com/NeonGeckoCom/neon_enclosure/tree/1.3.2a3) (2023-04-20)
 
 [Full Changelog](https://github.com/NeonGeckoCom/neon_enclosure/compare/1.3.2a2...1.3.2a3)
