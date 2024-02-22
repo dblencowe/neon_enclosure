@@ -31,6 +31,6 @@ from typing import List, Union
 
 def build_extra_dependency_list(config: Union[dict, Configuration], additional: List[str] = []) -> List[str]:
     extra_dependencies = config.get("extra_dependencies", {})
-    dependencies = additional + extra_dependencies.get("global", []) + extra_dependencies.get("neon-speech", [])
+    dependencies = additional + extra_dependencies.get("global", []) + extra_dependencies.get("enclosure", [])
 
     return dependencies

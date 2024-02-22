@@ -46,7 +46,7 @@ def neon_enclosure_cli(version: bool = False):
         click.echo(f"neon_enclosure version "
                    f"{get_package_version_spec('neon_enclosure')}")
 
-@neon_speech_cli.command(help="Install neon-enclosure module dependencies from config & cli")
+@neon_enclosure_cli.command(help="Install neon-enclosure module dependencies from config & cli")
 @click.option("--package", "-p", default=[], multiple=True,
               help="Additional package to install (can be repeated)")
 def install_dependencies(package: List[str]):
@@ -54,7 +54,7 @@ def install_dependencies(package: List[str]):
     from neon_enclosure.utils import build_extra_dependency_list
     config = Configuration()
     dependencies = build_extra_dependency_list(config, list(package))
-    result = install_packages_from_pip("neon-speech", dependencies)
+    result = install_packages_from_pip("neon-enclosure", dependencies)
     LOG.info(f"pip exit code: {result}")
     sys.exit(result)
 
