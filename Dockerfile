@@ -24,4 +24,4 @@ COPY docker_overlay/ /
 
 RUN neon-enclosure install-dependencies
 
-CMD ["bash ", "/root/run.sh"]
+CMD ["bash", "/root/run.sh"]
